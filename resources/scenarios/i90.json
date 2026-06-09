@@ -61,118 +61,99 @@
       },
       "crda_regions": {
         "01": {
-          "reference_point": "WOUDZ",
-          "reference_heading": 268,
-          "reference_length": 13,
-          "heading_tolerance": 80,
-          "near_distance": 0,
-          "near_half_width": 0.5,
-          "far_half_width": 1.5,
-          "region_length": 13,
-          "descent_distance": 0,
-          "descent_altitude": 5400,
-          "above_altitude_tolerance": 2000,
-          "below_altitude_tolerance": 500,
-          "reference_altitude": 5400
+          "reference_route": "ZOEEE CASST WOUDZ/arc8.1 FLIBZ",
+          "heading_tolerance": 90,
+          "near_half_width": 1.5,
+          "far_half_width": 0.5,      
+          "descent_altitude": 3500,
+          "above_altitude_tolerance": 5000,
+          "below_altitude_tolerance": 0,
+          "reference_altitude": 3500,
+          "scratchpad_patterns": ["RNP"]
         },
-        "03": {
-          "reference_point": "N030.04.48.858,W095.34.06.533",
-          "reference_heading": 243,
-          "reference_length": 5,
-          "heading_tolerance": 80,
-          "near_distance": 0,
-          "near_half_width": 0.5,
-          "far_half_width": 0.5,
-          "region_length": 2.2,
-          "descent_distance": 0,
-          "descent_altitude": 4800,
-          "above_altitude_tolerance": 2000,
-          "below_altitude_tolerance": 500,
-          "reference_altitude": 4800
-        },
-        "05": {
-          "reference_point": "N030.02.57.188,W095.35.00.338",
-          "reference_heading": 198,
-          "reference_length": 5,
-          "heading_tolerance": 80,
-          "near_distance": 0,
-          "near_half_width": 0.5,
-          "far_half_width": 0.5,
-          "region_length": 2.2,
-          "descent_distance": 0,
-          "descent_altitude": 4200,
-          "above_altitude_tolerance": 2000,
-          "below_altitude_tolerance": 500,
-          "reference_altitude": 4200
+        "RW8L": {
+          "reference_point": "FLIBZ",
+          "reference_heading": 88,
+          "reference_length": 25
         },
         "02": {
-          "reference_point": "N030.00.24.595,W095.40.03.259",
-          "reference_heading": 88,
-          "reference_length": 24,
+          "reference_route": "SMOCR SHIVV HOWLN TEXXN/arc8 SAYNO",
           "heading_tolerance": 90,
-          "near_distance": 0,
-          "near_half_width": 0.01,
-          "far_half_width": 0.1,
-          "region_length": 24,
-          "descent_distance": 0,
-          "descent_altitude": 3300,
-          "above_altitude_tolerance": 500,
-          "below_altitude_tolerance": 500,
-          "reference_altitude": 3300
+          "near_half_width": 1.5,
+          "far_half_width": 0.5,      
+          "descent_altitude": 3500,
+          "above_altitude_tolerance": 5000,
+          "below_altitude_tolerance": 0,
+          "reference_altitude": 3500,
+          "scratchpad_patterns": ["RNP"]
+        },
+        "RW9": {
+          "reference_point": "SAYNO",
+          "reference_heading": 88,
+          "reference_length": 25
+        },
+        "03": {
+          "reference_route": "DOMNO SKLER DRKAR/arc8.1 SOOPR",
+          "heading_tolerance": 90,
+          "near_half_width": 1.5,
+          "far_half_width": 0.5,      
+          "descent_altitude": 3500,
+          "above_altitude_tolerance": 5000,
+          "below_altitude_tolerance": 0,
+          "reference_altitude": 3500,
+          "scratchpad_patterns": ["RNP"]
+        },
+        "RW26R": {
+          "reference_point": "SOOPR",
+          "reference_heading": 267,
+          "reference_length": 25
         },
         "04": {
-          "reference_point": "N030.00.24.636,W095.38.12.572",
-          "reference_heading": 88,
-          "reference_length": 24,
+          "reference_route": "SHIVV SMOCR PRAYY WAALZ/arc8.1 FESTA",
           "heading_tolerance": 90,
-          "near_distance": 0,
-          "near_half_width": 0.01,
-          "far_half_width": 0.1,
-          "region_length": 24,
-          "descent_distance": 0,
-          "descent_altitude": 3300,
-          "above_altitude_tolerance": 500,
-          "below_altitude_tolerance": 500,
-          "reference_altitude": 3300
+          "near_half_width": 1.5,
+          "far_half_width": 0.5,      
+          "descent_altitude": 3500,
+          "above_altitude_tolerance": 5000,
+          "below_altitude_tolerance": 0,
+          "reference_altitude": 3500,
+          "scratchpad_patterns": ["RNP"]
         },
-        "06": {
-          "reference_point": "N030.00.25.350,W095.35.50.244",
-          "reference_heading": 88,
-          "reference_length": 24,
-          "heading_tolerance": 90,
-          "near_distance": 0,
-          "near_half_width": 0.01,
-          "far_half_width": 0.1,
-          "region_length": 24,
-          "descent_distance": 0,
-          "descent_altitude": 3300,
-          "above_altitude_tolerance": 500,
-          "below_altitude_tolerance": 500,
-          "reference_altitude": 3300
+        "RW27": {
+          "reference_point": "FESTA",
+          "reference_heading": 267,
+          "reference_length": 25
         }
       },
       "crda_pairs": [
         {
-          "crda_regions": ["01", "02"],
+          "crda_regions": ["01", "RW8L"],
           "leader_directions": ["N", "N"],
           "tie_symbol": "/",
           "stagger_symbol": "0",
-          "tie_offset": 2.5
+          "tie_offset": 3
         },
         {
-          "crda_regions": ["03", "04"],
-          "leader_directions": ["N", "N"],
+          "crda_regions": ["02", "RW9"],
+          "leader_directions": ["S", "S"],
           "tie_symbol": "/",
           "stagger_symbol": "0",
-          "tie_offset": 2.5
+          "tie_offset": 3		  
         },
         {
-          "crda_regions": ["05", "06"],
+          "crda_regions": ["03", "RW26R"],
           "leader_directions": ["N", "N"],
           "tie_symbol": "/",
           "stagger_symbol": "0",
-          "tie_offset": 2.5
-        }
+          "tie_offset": 3
+        },
+        {
+          "crda_regions": ["04", "RW27"],
+          "leader_directions": ["S", "S"],
+          "tie_symbol": "/",
+          "stagger_symbol": "0",
+          "tie_offset": 3
+        }      
       ],
       "departure_routes": {
         "15L.W": {
